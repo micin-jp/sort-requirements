@@ -7,7 +7,7 @@ import os
 import sys
 
 
-from . import sort_requirements
+from __init__ import sort_requirements
 
 
 def end(code, args, changed, total):
