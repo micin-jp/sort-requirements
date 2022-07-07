@@ -35,7 +35,5 @@ def sort_requirements(requirements):
         print(m)
         deps.append("{}".format(m))
 
-    # プレースホルダーとして解釈されないようにするため
-    #deps = [dep.replace("{", "{{").replace("}", "}}") for dep in deps]
     data = data.format(*deps)
     return data
