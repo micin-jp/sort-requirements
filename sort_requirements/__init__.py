@@ -36,4 +36,5 @@ def sort_requirements(requirements):
         deps.append("{}".format(m))
 
     data = data.format(*deps)
+    data = data.replace("{{", "{").replace("}}", "}")
     return data
